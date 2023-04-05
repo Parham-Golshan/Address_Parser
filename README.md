@@ -1,10 +1,12 @@
 # Address Parser
 ## Overview
-Address Parser is a Python Flask application that parses street addresses and extracts the street name and house number. The application provides two endpoints for parsing addresses:
+Address Parser is a Python Flask application that parses street addresses and extracts the street name and house number. The application provides 3 endpoints for parsing addresses:
 
-- /parser-simple: Parses simple addresses in the format "street name house number", and returns the street name and house number as separate values.
+- /parser-simple: Parses simple addresses in formats like "Winterallee 3", and returns the street name and house number as separate values.
 - /parser-medium: Parses medium addresses in formats like "Am Bächle 23" or "Auf der Vogelwiese 23 b", and returns the street name and house number as separate values.
 - /parser-complex: Parses complex addresses that may contain additional information, such as prefix or numeric street names like "Calle 39 No 1540", and returns the street name and house number as separate values.
+
+Please note that the last endpoint is able to handle all the formats (based on the examples in the assignment)
 ## Installation
 To install Address Parser, follow these steps:
 
@@ -31,6 +33,7 @@ The following methods and endpoints are available for parsing addresses:
 
 #### Request
 **Content-Type**: application/json
+
 **sample input:**
 
     {
@@ -40,6 +43,7 @@ The following methods and endpoints are available for parsing addresses:
 **Response:**
 
 HTTP/1.1 200 OK
+
 Content-Type: application/json
 
     {
@@ -62,6 +66,7 @@ Content-Type: application/json
 **Response:**
 
 HTTP/1.1 200 OK
+
 Content-Type: application/json
 
     {
@@ -84,6 +89,7 @@ Content-Type: application/json
 **Response:**
 
 HTTP/1.1 200 OK
+
 Content-Type: application/json
 
     {
