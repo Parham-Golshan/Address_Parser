@@ -17,7 +17,11 @@ To install Address Parser, follow these steps:
 4 - Install the dependencies by running pip install -r requirements.txt.
 
 ## Usage
-To run the application, activate the virtual environment and run this command **flask run** in your terminal 
+To run the application, activate the virtual environment and run 
+
+***flask run*** 
+
+command in your terminal. 
 The application will start and listen for incoming requests on port 5000.
 
 ## Endpoints
@@ -94,3 +98,10 @@ To do this please follow these steps:
 1 - run the project by **flask run** command in one terminal
 
 2 - run the tests using **python -m unittest tests.test_parser** in another terminal
+
+- Please make sure your virtual environment is activated in the second terminal too.
+
+## Postman Collection
+You can test the app by postman, using the postman collection in the **postman_collection** directory.
+
+Thank you
