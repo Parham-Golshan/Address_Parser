@@ -1,0 +1,7 @@
+# Adding virtual env to gitignore
+fr_venv/
+
+# Adding IDE specific directory and files
+.idea/
+
+__pycache__/
